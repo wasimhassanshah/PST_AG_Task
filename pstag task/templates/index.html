@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light bluish background */
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        form {
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search for Cars</h1>
+    <form action="/search" method="get">
+        <label>Length:</label>
+        <input type="text" name="length"><br>
+        <label>Weight:</label>
+        <input type="text" name="weight"><br>
+        <label>Velocity:</label>
+        <input type="text" name="velocity"><br>
+        <label>Color:</label>
+        <input type="text" name="color"><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <form action="/download" method="get">
+        <label>Length:</label>
+        <input type="text" name="length"><br>
+        <label>Weight:</label>
+        <input type="text" name="weight"><br>
+        <label>Velocity:</label>
+        <input type="text" name="velocity"><br>
+        <label>Color:</label>
+        <input type="text" name="color"><br>
+        <button type="submit">Download XML</button>
+    </form>
+</body>
+</html>
